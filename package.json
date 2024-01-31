@@ -1,0 +1,22 @@
+{
+  "name": "htmx-ai",
+  "module": "server.ts",
+  "type": "module",
+  "scripts": {
+    "dev": "bun --watch server.ts",
+    "build": "bun build server.ts",
+    "start": "NODE_ENV=production bun server.ts",
+    "test": "bun test"
+  },
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "@elysiajs/cors": "^0.8.0",
+    "elysia": "^0.8.10",
+    "openai": "^4.25.0"
+  }
+}

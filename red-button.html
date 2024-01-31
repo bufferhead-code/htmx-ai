@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HTMX AI Red Button Demo</title>
+    <script src="./htmx.min.js"></script>
+    <script src="./htmx-ai.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .htmx-indicator {
+            display: none;
+        }
+
+        .htmx-request .htmx-indicator {
+            display: block;
+        }
+
+        .htmx-request.htmx-indicator {
+            display: block;
+        }
+    </style>
+</head>
+<body hx-ext="ai">
+<div class="relative">
+    <button
+            hx-target="#red-button"
+            hx-ai="js:document.querySelector('#red-button').innerHTML + '. make the provided html button better, clicky, bigger and more fancy. you can add animations, emojis and effects. go stupid go crazy. get creative and make improve it. you have to change something.'">Make Bigger and more shiny
+    </button>
+
+    <div id="red-button" class="w-full min-h-screen flex items-center justify-center">
+        <button
+                class="bg-red-500 hover:bg-red-600
+    text-white font-bold py-2 px-4 rounded">
+            Red Button
+        </button>
+    </div>
+</div>
+</body>
+</html>

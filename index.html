@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HTML 5 Boilerplate</title>
+    <script src="./htmx.min.js"></script>
+    <script src="./htmx-ai.js"></script>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .htmx-indicator {
+            display: none;
+        }
+
+        .htmx-request .htmx-indicator {
+            display: block;
+        }
+
+        .htmx-request.htmx-indicator {
+            display: block;
+        }
+    </style>
+
+</head>
+<body hx-ext="ai">
+
+<div class="relative">
+    <button
+            class="absolute bottom-[20px] z-50 right-[15px] bg-white rounded-full shadow-lg px-5 py-3 text-lg font-semibold text-gray-700 hover:bg-gray-50 hover:shadow opacity-50 hover:opacity-100 transition duration-300 ease-in-out"
+            hx-ai="Make a modern hero section for a new HTMX Plugin called 'HTMX AI'. Include a call to action button. Use fancy transparent grids and gradients in the background. It should feature a code example where it uses an hx-ai='Make a fancy website' attribute on a button' inside a simple vs code style editor."
+            hx-indicator="#hero-loading" hx-target="#hero-wrapper">Regenerate section with AI
+    </button>
+    <div id="hero-loading" class="htmx-indicator absolute z-40 w-full min-h-full top-0 left-0">
+        <div class="absolute bg-white/70 text-gray-800 text-3xl right-0 left-0 h-full w-full backdrop-blur shadow-xl flex items-center justify-center">
+            <div class="flex flex-col items-center space-y-5">
+                <svg class="animate-spin -ml-1 mr-3 h-7 w-7 text-gray-800" xmlns="http://www.w3.org/2000/svg"
+                     fill="none"
+                     viewBox="0 0 24 24">
+                    <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+                    <path class="opacity-75" fill="currentColor"
+                          d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                </svg>
+                <p class="max-w-sm text-center text-lg inline-block font-semibold">
+                    Generating new hero section, this might take a while. AI might be cool but it's not fast.
+                </p>
+            </div>
+
+        </div>
+    </div>
+    <div id="hero-wrapper" class="relative">
+        <div class="relative bg-gradient-to-r from-blue-500 to-indigo-600 py-12 flex items-center justify-center p-10">
+            <div class="text-white max-w-4xl mx-auto p-10">
+                <div class="mb-8">
+                    <h1 class="text-6xl font-bold mb-4">HTMX AI</h1>
+                    <p class="text-2xl">The revolutionary plugin for AI-driven interactions.</p>
+                </div>
+                <div class="bg-black bg-opacity-60 rounded-lg overflow-hidden">
+                    <div class="p-6">
+                        <div class="flex justify-between items-center">
+                            <div class="flex space-x-2">
+                                <div class="w-3 h-3 bg-red-500 rounded-full"></div>
+                                <div class="w-3 h-3 bg-yellow-400 rounded-full"></div>
+                                <div class="w-3 h-3 bg-green-500 rounded-full"></div>
+                            </div>
+                            <span class="text-sm text-gray-300">HTMX-AI-Example.html</span>
+                        </div>
+                        <pre class="text-green-400 mt-4 text-sm leading-relaxed"><code>&lt;button hx-ai="Make a fancy website"&gt;Activate AI&lt;/button&gt;</code>
+                        </pre>
+                    </div>
+                </div>
+                <a href="#"
+                   class="mt-8 inline-block bg-white text-blue-600 font-bold py-4 px-8 rounded-full shadow-lg hover:bg-blue-50 transition duration-300 ease-in-out">
+                    Get Started
+                </a>
+            </div>
+        </div>
+        <style>
+            .bg-grid {
+                background-image: linear-gradient(0deg, transparent 24%, rgba(255, 255, 255, 0.05) 25%, rgba(255, 255, 255, 0.05) 26%, transparent 27%, transparent 74%, rgba(255, 255, 255, 0.05) 75%, rgba(255, 255, 255, 0.05) 76%, transparent 77%, transparent),
+                linear-gradient(90deg, transparent 24%, rgba(255, 255, 255, 0.05) 25%, rgba(255, 255, 255, 0.05) 26%, transparent 27%, transparent 74%, rgba(255, 255, 255, 0.05) 75%, rgba(255, 255, 255, 0.05) 76%, transparent 77%, transparent);
+                background-size: 50px 50px;
+            }
+        </style>
+    </div>
+</div>
+
+<!-- Feature Section -->
+<div class="relative">
+    <button
+            class="absolute bottom-[20px] z-50 right-[15px] bg-white rounded-full shadow-lg px-5 py-3 text-lg font-semibold text-gray-700 hover:bg-gray-50 hover:shadow opacity-50 hover:opacity-100 transition duration-300 ease-in-out"
+            hx-ai="Make a feature section for a new HTMX Plugin called 'HTMX AI'. Come up with 3 great features for the plugin."
+            hx-indicator="#feature-loading" hx-target="#feature-wrapper">Regenerate section with AI
+    </button>
+    <div id="feature-loading" class="htmx-indicator absolute z-40 w-full min-h-full top-0 left-0">
+        <div class="absolute bg-white/70 text-gray-800 text-3xl right-0 left-0 h-full w-full backdrop-blur shadow-xl flex items-center justify-center">
+            <div class="flex flex-col items-center space-y-5">
+                <svg class="animate-spin -ml-1 mr-3 h-7 w-7 text-gray-800" xmlns="http://www.w3.org/2000/svg"
+                     fill="none"
+                     viewBox="0 0 24 24">
+                    <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+                    <path class="opacity-75" fill="currentColor"
+                          d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                </svg>
+                <p class="max-w-sm text-center text-lg inline-block font-semibold">
+                    Generating new feature section, this might take a while. AI might be cool but it's not fast.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div id="feature-wrapper" class="relative">
+        <div class="bg-gray-100 py-12">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center">
+                    <h2 class="text-base font-semibold text-indigo-600 tracking-wide uppercase">Introducing</h2>
+                    <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">HTMX AI Plugin</h2>
+                    <p class="mt-3 max-w-2xl mx-auto text-xl text-gray-500 sm:mt-4">Revolutionizing how you interact
+                        with
+                        HTMX</p>
+                </div>
+                <div class="mt-10">
+                    <div class="flex flex-wrap justify-evenly -mx-4">
+                        <div class="mb-8 w-full md:w-1/3 px-4">
+                            <div class="bg-white max-w-sm p-6 rounded-lg shadow-xl mx-auto">
+                                <div class="flex items-center justify-center w-12 h-12 rounded-md bg-indigo-500 text-white mb-4">
+                                    <!-- icon from heroicons (https://heroicons.com/) -->
+                                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                         xmlns="http://www.w3.org/2000/svg">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                              d="M4 8h16M4 16h16"></path>
+                                    </svg>
+                                </div>
+                                <h3 class="text-2xl font-bold text-gray-900">Seamless Integration</h3>
+                                <p class="mt-4 text-gray-600">Easily integrate HTMX AI Plugin into your projects without
+                                    hassle.</p>
+                            </div>
+                        </div>
+                        <div class="mb-8 w-full md:w-1/3 px-4">
+                            <div class="bg-white max-w-sm p-6 rounded-lg shadow-xl mx-auto">
+                                <div class="flex items-center justify-center w-12 h-12 rounded-md bg-indigo-500 text-white mb-4">
+                                    <!-- icon from heroicons (https://heroicons.com/) -->
+                                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                         xmlns="http://www.w3.org/2000/svg">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                              d="M17 12L12 7l-5 5M7 12h10"></path>
+                                    </svg>
+                                </div>
+                                <h3 class="text-2xl font-bold text-gray-900">Enhanced Performance</h3>
+                                <p class="mt-4 text-gray-600">Experience blazing fast performance with HTMX AI
+                                    Plugin.</p>
+                            </div>
+                        </div>
+                        <div class="mb-8 w-full md:w-1/3 px-4">
+                            <div class="bg-white max-w-sm p-6 rounded-lg shadow-xl mx-auto">
+                                <div class="flex items-center justify-center w-12 h-12 rounded-md bg-indigo-500 text-white mb-4">
+                                    <!-- icon from heroicons (https://heroicons.com/) -->
+                                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                         xmlns="http://www.w3.org/2000/svg">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                              d="M18 9a6 6 0 00-12 0v4a6 6 0 0012 0v-4z"></path>
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                              d="M13 11V9a4 4 0 00-8 0v2"></path>
+                                    </svg>
+                                </div>
+                                <h3 class="text-2xl font-bold text-gray-900">AI Powered Features</h3>
+                                <p class="mt-4 text-gray-600">Leverage the power of AI for advanced functionality.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Footer -->
+<div class="relative">
+    <button
+            class="absolute bottom-[20px] z-50 right-[15px] bg-white rounded-full shadow-lg px-5 py-3 text-lg font-semibold text-gray-700 hover:bg-gray-50 hover:shadow opacity-50 hover:opacity-100 transition duration-300 ease-in-out"
+            hx-ai="Make a multicolumn footer for a new HTMX Plugin called 'HTMX AI'. Include the current year 2024 as well as placeholder links for things that can be commonly found in footers."
+            hx-indicator="#footer-loading" hx-target="#footer-wrapper">Regenerate section with AI
+    </button>
+    <div id="footer-loading" class="htmx-indicator absolute z-40 w-full min-h-full top-0 left-0">
+        <div class="absolute bg-white/70 text-gray-800 text-3xl right-0 left-0 h-full w-full backdrop-blur shadow-xl flex items-center justify-center">
+            <div class="flex flex-col items-center space-y-5">
+                <svg class="animate-spin -ml-1 mr-3 h-7 w-7 text-gray-800" xmlns="http://www.w3.org/2000/svg"
+                     fill="none"
+                     viewBox="0 0 24 24">
+                    <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+                    <path class="opacity-75" fill="currentColor"
+                          d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                </svg>
+                <p class="max-w-sm text-center text-lg inline-block font-semibold">
+                    Generating new footer section, this might take a while. AI might be cool but it's not fast.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div id="footer-wrapper" class="relative">
+        <div id="footer-wrapper" class="relative">
+            <footer class="bg-gray-800 text-white py-8">
+                <div class="max-w-screen-xl mx-auto px-4">
+                    <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+                        <!-- Column 1 -->
+                        <div>
+                            <h2 class="mb-6 text-sm font-semibold text-gray-400 uppercase">Company</h2>
+                            <ul class="text-gray-300 text-sm">
+                                <li class="mb-4">
+                                    <a href="#" class="hover:text-white transition-colors duration-200">About Us</a>
+                                </li>
+                                <li class="mb-4">
+                                    <a href="#" class="hover:text-white transition-colors duration-200">Careers</a>
+                                </li>
+                                <li class="mb-4">
+                                    <a href="#" class="hover:text-white transition-colors duration-200">Press</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- Column 2 -->
+                        <div>
+                            <h2 class="mb-6 text-sm font-semibold text-gray-400 uppercase">Product</h2>
+                            <ul class="text-gray-300 text-sm">
+                                <li class="mb-4">
+                                    <a href="#" class="hover:text-white transition-colors duration-200">Features</a>
+                                </li>
+                                <li class="mb-4">
+                                    <a href="#" class="hover:text-white transition-colors duration-200">Pricing</a>
+                                </li>
+                                <li class="mb-4">
+                                    <a href="#" class="hover:text-white transition-colors duration-200">Releases</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- Column 3 -->
+                        <div>
+                            <h2 class="mb-6 text-sm font-semibold text-gray-400 uppercase">Resources</h2>
+                            <ul class="text-gray-300 text-sm">
+                                <li class="mb-4">
+                                    <a href="#"
+                                       class="hover:text-white transition-colors duration-200">Documentation</a>
+                                </li>
+                                <li class="mb-4">
+                                    <a href="#" class="hover:text-white transition-colors duration-200">API
+                                        Reference</a>
+                                </li>
+                                <li class="mb-4">
+                                    <a href="#" class="hover:text-white transition-colors duration-200">Community</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- Column 4 -->
+                        <div>
+                            <h2 class="mb-6 text-sm font-semibold text-gray-400 uppercase">Help</h2>
+                            <ul class="text-gray-300 text-sm">
+                                <li class="mb-4">
+                                    <a href="#" class="hover:text-white transition-colors duration-200">Support</a>
+                                </li>
+                                <li class="mb-4">
+                                    <a href="#" class="hover:text-white transition-colors duration-200">Privacy
+                                        Policy</a>
+                                </li>
+                                <li class="mb-4">
+                                    <a href="#" class="hover:text-white transition-colors duration-200">Terms of
+                                        Service</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Bottom row for copyright -->
+                    <div class="text-center text-gray-500 text-sm mt-8 border-t border-gray-700 pt-4">
+                        © 2024 HTMX AI. All rights reserved.
+                    </div>
+                </div>
+            </footer>
+
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

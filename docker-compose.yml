@@ -1,0 +1,18 @@
+services:
+  js:
+    build: .
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.js.rule=Host(`htmx-ai.test`)"
+      - "traefik.http.routers.js.entrypoints=web"
+      - "traefik.http.services.js.loadbalancer.server.port=80"
+    environment:
+        OPENAI_API_KEY: '${OPENAI_API_KEY}'
+    volumes:
+      - "./server.ts:/usr/src/app/server.ts"
+    networks:
+      - reverse-proxy
+networks:
+  reverse-proxy:
+    name: "${NETWORK_NAME}"
+    external: true
