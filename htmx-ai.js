@@ -2,7 +2,8 @@ htmx.defineExtension('ai', {
     onEvent: function (name, evt) {
         if (name === 'htmx:beforeProcessNode') {
             evt.target.querySelectorAll('[hx-ai]').forEach(el => {
-                el.setAttribute('hx-post', 'http://htmx-ai.test/');
+                const nextEndpoint = el.closest(['hx-ai-endpoint'])?.getAttribute('hx-ai-endpoint');
+                el.setAttribute('hx-post', nextEndpoint ?? 'http://htmx-ai.test/');
                 if(el.getAttribute('hx-ai').startsWith('js:')){
                     el.setAttribute('hx-vals', 'js:{prompt: ' + el.getAttribute('hx-ai').replace('js:', '') + '}');
                 }
