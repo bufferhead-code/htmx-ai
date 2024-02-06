@@ -1,5 +1,7 @@
 # htmx-ai
 
+You can see a [live demo here](https://htmx-ai.bufferhead.com/)
+
 HTMX-AI allows you to create AI generated webdesign by just providing a prompt via the `hx-ai` attribute. 
 
 ```html
