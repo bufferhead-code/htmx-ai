@@ -62,3 +62,7 @@ To run:
 ```bash
 bun run server.ts
 ```
+
+## Disclaimer
+
+DO NOT use untested and unreviewed AI generated content in production. This is a proof of concept and should not be used in production.
