@@ -1,8 +1,12 @@
 # htmx-ai
 
-You can see a [live demo here](https://htmx-ai.bufferhead.com/)
+HTMX-AI allows you to create AI generated webdesign by just providing a prompt via the `hx-ai` attribute.
 
-HTMX-AI allows you to create AI generated webdesign by just providing a prompt via the `hx-ai` attribute. 
+**You can see a [live demo here](https://htmx-ai.bufferhead.com/)**
+
+[![Youtube Video about how this project was made](http://img.youtube.com/vi/NP6hpM5YLRo/0.jpg)](http://www.youtube.com/watch?v=NP6hpM5YLRo 'Build your Website with HTMX powered by AI')
+
+**You can learn more about how it works and how i made it [here](http://www.youtube.com/watch?v=NP6hpM5YLRo)**
 
 ```html
 <button hx-ai="Generate a website design for a coffee shop"></button>
